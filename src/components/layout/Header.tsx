@@ -26,7 +26,7 @@ export default function Header() {
           ))}
         </ul>
         <div className="flex items-center gap-4 nav-actions">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <button
             className="hamburger flex sm:hidden flex-col gap-1"
             id="hamburger"
