@@ -32,7 +32,7 @@ export default function Hero() {
         </h1>
         <div className="typing-container" aria-live="polite">
           <span id="typingText" className="typing-text">Software Developer</span>
-          <span className="cursor">|</span>
+          <span className="cursor"></span>
         </div>
         <p className="hero-description">
           Passionate Software Developer specializing in JavaScript, Java, React, Spring Boot, Python, and Data Analytics. With 1 year of hands-on internship experience, I focus on building scalable applications, automating testing workflows, and crafting data-driven solutions. I enjoy transforming complex problems into high-performance, user-centric digital experiences.
