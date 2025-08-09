@@ -2819,3 +2819,64 @@ section {
 }
 
 }
+/* MOBILE HAMBURGER MENU - COMPLETE IMPLEMENTATION */
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from { 
+    transform: translateX(100%); 
+    opacity: 0;
+  }
+  to { 
+    transform: translateX(0); 
+    opacity: 1;
+  }
+}
+
+/* Ensure mobile menu appears above everything */
+.mobile-menu-overlay {
+  z-index: 9999;
+}
+
+.mobile-nav {
+  z-index: 10000;
+}
+
+/* Dark mode support for mobile menu */
+.dark .mobile-nav {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+/* Light mode support for mobile menu */
+.mobile-nav {
+  background: rgba(255, 255, 255, 0.95);
+}
