@@ -2,6 +2,7 @@
 import './globals.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 config.autoAddCss = false; // Tell FontAwesome to skip adding CSS (avoids duplicate)
 import type { Metadata } from 'next';
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
