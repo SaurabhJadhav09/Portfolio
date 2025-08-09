@@ -51,11 +51,11 @@ export default function Projects() {
     <section id="projects" className="projects" aria-label="Featured projects">
       <div className="container">
         <h2 className="section-title">Featured Projects</h2>
-        <div className="projects-filter">
+        {/* <div className="projects-filter">
           {['All','Web Apps','AI/ML','Data Analytics'].map((label,i) => (
             <button key={i} className={`filter-btn${label==='All'?' active':''}`}>{label}</button>
           ))}
-        </div>
+        </div> */}
         <div className="projects-grid">
           {projects.map((p,i) => (
             <div key={i} className="project-card glass-card featured" data-category={p.category.join(' ')}>
