@@ -6,15 +6,15 @@ const projects = [
     title: 'Smart Travel Planner',
     desc: 'Full-stack travel planning application with AI itineraries.',
     icon: 'fas fa-map-marked-alt',
-    category: ['web','ai'],
+    category: ['web', 'ai'],
     highlights: [
       'Responsive React frontend',
       'OpenAI GPT-3.5 API integration',
       'Top 10% at Avishkar'
     ],
-    tech: ['React','OpenAI API','PHP','MySQL'],
+    tech: ['React', 'OpenAI API', 'PHP', 'MySQL'],
     github: 'https://github.com/SaurabhJadhav09/Tales-of-India',
-    demo: 'https://smart-travel-planner.vercel.app'
+    // demo: '#'
   },
   {
     title: 'Jarvis – AI Voice Assistant',
@@ -26,9 +26,9 @@ const projects = [
       'Browser automation (Google/Youtube)',
       'Custom music library'
     ],
-    tech: ['Python','speech_recognition','OpenAI GPT-3.5'],
+    tech: ['Python', 'speech_recognition', 'OpenAI GPT-3.5'],
     github: 'https://github.com/SaurabhJadhav09/Jarvis---Virtual-Assistant-',
-    demo: '#'
+    // demo: '#'
   },
   {
     title: 'Sales Analytics Dashboard',
@@ -40,10 +40,24 @@ const projects = [
       'Interactive filters',
       'Automated reporting'
     ],
-    tech: ['Power BI','DAX','SQL Server','Python'],
+    tech: ['Power BI', 'DAX', 'SQL Server', 'Python'],
     github: 'https://github.com/SaurabhJadhav09/Blinkit-Power-BI-Dashboard',
-    demo: '#'
+    // demo: '#'
   },
+  {
+    title: 'HR Employee Distribution Dashboard',
+    desc: 'Interactive Power BI dashboard analyzing 22K+ employee records to visualize workforce demographics, location trends, and employment patterns.',
+    icon: 'fas fa-chart-bar',
+    category: ['data'],
+    highlights: [
+      'Analyzed 22,000+ employee records spanning 2000-2020',
+      'Interactive Power BI visualizations and filters',
+      'Workforce demographics and location insights'
+    ],
+    tech: ['Power BI', 'DAX', 'MySQL', 'Python'],
+    github: 'https://github.com/SaurabhJadhav09/HR-Dashboard-MySQL-PowerBI.git',
+    // demo: '#'
+  }
 ];
 
 export default function Projects() {
@@ -57,7 +71,7 @@ export default function Projects() {
           ))}
         </div> */}
         <div className="projects-grid">
-          {projects.map((p,i) => (
+          {projects.map((p, i) => (
             <div key={i} className="project-card glass-card featured" data-category={p.category.join(' ')}>
               <div className="project-badge">Featured</div>
               <div className="project-image">
@@ -68,19 +82,19 @@ export default function Projects() {
                 <p>{p.desc}</p>
                 <div className="project-highlights">
                   <ul>
-                    {p.highlights.map((h,j) => <li key={j}>{h}</li>)}
+                    {p.highlights.map((h, j) => <li key={j}>{h}</li>)}
                   </ul>
                 </div>
                 <div className="project-tech">
-                  {p.tech.map((t,j) => <span key={j} className="tech-tag">{t}</span>)}
+                  {p.tech.map((t, j) => <span key={j} className="tech-tag">{t}</span>)}
                 </div>
                 <div className="project-actions">
                   <a href={p.github} className="glass-btn secondary" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-github"></i> Code
                   </a>
-                  <a href={p.demo} className="glass-btn primary" target="_blank" rel="noopener noreferrer">
+                  {/* <a href={p.demo} className="glass-btn primary" target="_blank" rel="noopener noreferrer">
                     <i className="fas fa-external-link-alt"></i> Live Demo
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
