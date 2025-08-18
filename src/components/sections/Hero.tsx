@@ -35,7 +35,7 @@ export default function Hero() {
           <span className="cursor"></span>
         </div>
         <p className="hero-description">
-          Passionate Software Developer specializing in JavaScript, Java, React, Spring Boot, Python, and Data Analytics. With 1 year of hands-on internship experience, I focus on building scalable applications, automating testing workflows, and crafting data-driven solutions. I enjoy transforming complex problems into high-performance, user-centric digital experiences.
+          Passionate Software Developer specializing in JavaScript, Java, React, Spring Boot, and Python. With 1 year of hands-on internship experience, I focus on building scalable applications, automating testing workflows, and creating robust user-centric digital solutions. I enjoy transforming complex problems into high-performance software and delivering seamless user experiences.
         </p>
         <div className="hero-actions">
           <a href="#contact" className="glass-btn primary">
@@ -50,12 +50,17 @@ export default function Hero() {
         </div>
         <div className="hero-stats" role="region" aria-label="Professional statistics">
           <div className="stat-item glass-card">
+            <a href = "#experience">
             <h3>1</h3>
             <p>Year of Experience</p>
+            </a>
           </div>
+          
           <div className="stat-item glass-card">
+            <a href="#projects">
             <h3>10+</h3>
             <p>Projects Completed</p>
+            </a>
           </div>
           <button
             id="certificationsBtn"
